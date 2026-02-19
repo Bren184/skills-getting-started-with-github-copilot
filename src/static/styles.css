@@ -93,18 +93,33 @@ section h3 {
 }
 
 .participants-section li {
-  padding: 6px 0 6px 20px;
+  padding: 6px 0;
   position: relative;
   color: #555;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.participants-section li:before {
-  content: "•";
-  color: #0066cc;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
+.participants-section li span {
+  flex: 1;
+}
+
+.delete-participant {
+  background-color: transparent;
+  color: #e53935;
+  border: none;
+  font-size: 20px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+  margin-left: 8px;
+}
+
+.delete-participant:hover {
+  color: #c62828;
 }
 
 .form-group {
